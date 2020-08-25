@@ -68,10 +68,11 @@ const rotateAnimation = (element) => {
  */
 const flipAnimation = (element) => {
     anime({
+        delay: 2000,
         targets: element,
         easing: 'easeInOutQuad',
         direction: 'alternate',
         rotateY: [{ value: "180deg", duration: 700 }],
-        loop: 1
+        loop: 1,
     })
 }

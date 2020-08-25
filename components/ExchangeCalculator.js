@@ -8,7 +8,7 @@ Vue.component('exchange-calculator', {
 	<h3 class="card-title text-center">Exchange Calculator</h3>
 	<hr>
 	<div class="row">
-		<div class="col col-sm-12 col-md ">
+		<div class="col-12 col-sm-12 col-md ">
 			<label for="input">Input</label>
 			<input id="input" type="number" v-model="inputAmount" class="form-control"
 				@keyup="handleInput">
@@ -34,7 +34,7 @@ Vue.component('exchange-calculator', {
 				</option>
 			</select>
 		</div>
-		<div class="col col-sm-12 col-md text-right">
+		<div class="col-12 col-sm-12 col-md text-right">
 			<label for="output">Result</label>
 			<input id="output" type="number" v-model="outputAmount" class="form-control"
 				@keyup="handleOutput">
