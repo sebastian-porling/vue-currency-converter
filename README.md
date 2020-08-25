@@ -4,7 +4,7 @@ This is solutions is made by [Sebastian Porling](https://github.com/sebastian-po
 
 ## :100: Demo
 
-You can view this site on [porling.me/vue-exchange-calculator](http://porling.me/vue-exchange-calculator).
+You can view this site on [porling.me/vue-currency-converter](http://porling.me/vue-currency-converter).
 I provided some GIFs :smile: that shows how the website looks and functions if you for some reason don't want to check the website or download the project!
 
 ![Site Demo!](./images/site-demo.gif)
