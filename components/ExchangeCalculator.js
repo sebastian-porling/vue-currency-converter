@@ -3,7 +3,7 @@
 Vue.component('exchange-calculator', {
     template:
 `
-<div id="exchange-calculator" class="card" data-aos="flip-up">
+<div id="exchange-calculator" class="card" data-aos="flip-up" data-aos-anchor-placement="top-center">
 	<div class="card-body">
 	<h3 class="card-title text-center">Exchange Calculator</h3>
 	<hr>

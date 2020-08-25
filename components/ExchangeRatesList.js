@@ -1,18 +1,18 @@
 Vue.component('exchange-rates-list', {
     template: 
 `
-<div id="rate-list" class="card" data-aos="zoom-out">
+<div id="rate-list" class="card" data-aos="zoom-out" data-aos-anchor-placement="top-center">
 <div class="card-body">
     <h3 class="card-title text-center">Exchange rates for {{ exg }}</h3>
     <table class="table text-center">
-        <thead>
+        <thead id="table-head">
             <tr>
                 <th scope="col"><b>Currency</b></th>
                 <th scope="col"><b>Rate</b></th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(rate, currency) in exgRates" data-aos="flip-right" data-aos-anchor="#rate-list">
+            <tr v-for="(rate, currency) in exgRates" data-aos="flip-right" data-aos-anchor="#table-head" data-aos-anchor-placement="top-center">
                 <td><a @click="exg = currency">{{currency}}</a></td>
                 <td>{{_.ceil(rate, 3)}}</td>
             </tr>
