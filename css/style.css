@@ -1,14 +1,21 @@
 body {
-  font-family: tahoma;
-  color:#282828;
   margin: 0px;
   background: rgb(196,228,226);
   background: radial-gradient(circle, rgba(196,228,226,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 #exchange-calculator {
-  margin-top: 3rem;
+  margin: 3rem auto;
   padding: 1rem 1rem;
+}
+
+#profile-module {
+  margin-bottom: 1em;
+}
+
+a{
+  color: lightskyblue!important;
+  text-decoration: underline!important;
 }
 
 #rate-list {
@@ -23,7 +30,6 @@ body {
 }
 
 .scroller {
-  margin-top: 5rem;
   margin-bottom: 30rem;
 }
 
