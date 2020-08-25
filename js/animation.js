@@ -1,4 +1,8 @@
 
+/**
+ * Shakes it up, down, left, right and rotates.
+ * @param {String} element Could be class, id, element etc.
+ */
 const shake = (element) => {
     xMax = 20;
     anime({
@@ -11,6 +15,10 @@ const shake = (element) => {
     })
 }
 
+/**
+ * Shakes left and right.
+ * @param {String} element Could be class, id, element etc.
+ */
 const shakeLeftRigt = (element) => {
     xMax = 20;
     anime({
@@ -22,6 +30,10 @@ const shakeLeftRigt = (element) => {
     })
 }
 
+/**
+ * Makes element go up and down
+ * @param {String} element Could be class, id, element etc.
+ */
 const upAndDown = (element) => {
     xMax = 20;
     anime({
@@ -34,6 +46,10 @@ const upAndDown = (element) => {
     })
 }
 
+/**
+ * Rotates back and fourth
+ * @param {String} element Could be class, id, element etc.
+ */
 const rotateAnimation = (element) => {
     xMax = 2;
     anime({
@@ -46,6 +62,10 @@ const rotateAnimation = (element) => {
     })
 }
 
+/**
+ * Flips around the y-axis.
+ * @param {String} element Could be class, id, element etc.
+ */
 const flipAnimation = (element) => {
     anime({
         targets: element,
