@@ -15,7 +15,7 @@ I provided some GIFs :smile: that shows how the website looks and functions if y
 
 ## :interrobang: Motivation
 
-The libraries used in this project are the following: [**AOS**](https://michalsnik.github.io/aos/) which is an animation library for "popping up" objects while scrolling, [**Material Design Bootstrap**](https://mdbootstrap.com/) for CSS, [**Axios**](https://www.npmjs.com/package/axios) for making HTTP requests,  [**Vue.js**](https://vuejs.org/) the frontend framework and [**lodash**](https://lodash.com/) which has a lot of utility functions, but only a few are used in this project.
+The libraries used in this project are the following: [**AOS**](https://michalsnik.github.io/aos/) which is an animation library for "popping up" objects while scrolling, [**Anime.js**](https://animejs.com/) which is a rich library for making all kind of animations, [**Material Design Bootstrap**](https://mdbootstrap.com/) for CSS styling, [**Axios**](https://www.npmjs.com/package/axios) for making HTTP requests,  [**Vue.js**](https://vuejs.org/) the frontend framework and [**lodash**](https://lodash.com/) which has a lot of utility functions, but only a few are used in this project.
 
 I've added some styling in the [**style.css](./css/style.css), mostly for adding margins, sizing and background colors!
 
@@ -32,3 +32,5 @@ If the button is pressed we will switch the values in the select fields.
 The `calculateInputOutout(inputFocused)` method we recieve a boolean that helps us to decide if we are going to calculate the input or output field. I use the lodash function `_.ciel(number, precision)` to truncate the floating number.
 
 In [**ExchangeRatesList.js**](./components/ExchangeRatesList.js) I firstly fetch the API and load the table with the rates and currencies. I added a click event which changes the value of `exg`. When it is changed it will trigger the watch function and will then fetch the new currencies and rates for the new `exg` value.
+
+All the animations are done in [**animation.js**](./js/animation.js), it basically uses keyframes and delays. But also have some cool "physics" for easing in and out elements.
