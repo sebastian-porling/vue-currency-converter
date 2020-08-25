@@ -1,0 +1,32 @@
+body {
+  font-family: tahoma;
+  color:#282828;
+  margin: 0px;
+  background: rgb(196,228,226);
+  background: radial-gradient(circle, rgba(196,228,226,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#exchange-calculator {
+  margin-top: 3rem;
+  padding: 1rem 1rem;
+}
+
+#rate-list {
+  margin: 3rem auto;
+  max-width: 30rem;
+}
+
+.testimonial-card {
+  max-width: 30rem;
+  max-height: 42rem;
+  margin: 0 auto;
+}
+
+.scroller {
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+}
+
+button {
+  padding: 0.5rem 1rem!important;
+}
