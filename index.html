@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<title>Exchange Tool</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+	<div id="app" >
+		<div id="exchange" class="container">
+
+			<profile-module></profile-module>
+
+			<scroll-text></scroll-text>
+
+			<exchange-calculator></exchange-calculator>
+
+			<scroll-text></scroll-text>
+
+			<exchange-rates-list></exchange-rates-list>
+		</div>
+	</div>
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"
+		integrity="sha256-ur/YlHMU96MxHEsy3fHGszZHas7NzH4RQlD4tDVvFhw=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js" integrity="sha512-rBvJrSgappbpVQiWJabYgWL32JOqZbhh4cxtj3iWEKx7yVS/h6c2r4q4pwp5AIcF5yvCQzbo+GPwelUjfxaG7Q==" crossorigin="anonymous"></script>
+	<script src="./js/fetch.js"></script>
+	<script src="./components/ExchangeRatesList.js"></script>
+	<script src="./components/ProfileModule.js"></script>
+	<script src="./components/ScrollText.js"></script>
+	<script src="./components/ExchangeCalculator.js"></script>
+	<script src="./js/main.js"></script>
+	<script>AOS.init();</script>
+</body>
+
+</html>
