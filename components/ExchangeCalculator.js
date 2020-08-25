@@ -8,12 +8,12 @@ Vue.component('exchange-calculator', {
 	<h3 class="card-title text-center">Exchange Calculator</h3>
 	<hr>
 	<div class="row">
-		<div class="col">
+		<div class="col col-sm-12 col-md ">
 			<label for="input">Input</label>
 			<input id="input" type="number" v-model="inputAmount" class="form-control"
 				@keyup="handleInput">
 		</div>
-		<div class="col text-center">
+		<div class="col col-sm col-md text-center">
 			<label for="from-select">From</label>
 			<select id="from-select" v-model="selectedFromCurrency"
 				class="browser-default custom-select">
@@ -22,11 +22,11 @@ Vue.component('exchange-calculator', {
 				</option>
 			</select>
 		</div>
-		<div class="col d-flex justify-content-center">
+		<div class="col col-sm col-md d-flex justify-content-center">
 			<button @click="switchCurrencies" class="btn btn-primary mt-4"><i
 					class="fas fa-exchange-alt"></i></button>
 		</div>
-		<div class="col text-center">
+		<div class="col col-sm col-md text-center">
 			<label for="to-select">To</label>
 			<select id="to-select" v-model="selectedToCurrency" class="browser-default custom-select">
 				<option v-for="currency in currencies" v-bind:value="currency">
@@ -34,7 +34,7 @@ Vue.component('exchange-calculator', {
 				</option>
 			</select>
 		</div>
-		<div class="col text-right">
+		<div class="col col-sm-12 col-md text-right">
 			<label for="output">Result</label>
 			<input id="output" type="number" v-model="outputAmount" class="form-control"
 				@keyup="handleOutput">
@@ -118,6 +118,7 @@ Vue.component('exchange-calculator', {
                 this.selectedToCurrency,
                 this.selectedFromCurrency,
             ];
+            shake("#exchange-calculator");
         },
         /**
          * Calculatets the conversion between two currencies

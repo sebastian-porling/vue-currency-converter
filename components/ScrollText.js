@@ -3,5 +3,8 @@ Vue.component('scroll-text', {
 <div class="text-center scroller">
 	<h2>Scroll Down</h2>
 	<i class="fas fa-angle-double-down"></i>
-</div>`
+</div>`,
+	mounted() {
+		upAndDown('.scroller');
+	}
 })

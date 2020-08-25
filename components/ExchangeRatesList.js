@@ -1,7 +1,7 @@
 Vue.component('exchange-rates-list', {
     template: 
 `
-<div id="rate-list" class="card" data-aos="flip-right">
+<div id="rate-list" class="card" data-aos="zoom-out">
 <div class="card-body">
     <h3 class="card-title text-center">Exchange rates for {{ exg }}</h3>
     <table class="table text-center">
@@ -12,7 +12,7 @@ Vue.component('exchange-rates-list', {
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(rate, currency) in exgRates">
+            <tr v-for="(rate, currency) in exgRates" data-aos="flip-right" data-aos-anchor="#rate-list">
                 <td><a @click="exg = currency">{{currency}}</a></td>
                 <td>{{_.ceil(rate, 3)}}</td>
             </tr>
@@ -38,6 +38,7 @@ Vue.component('exchange-rates-list', {
          */
         exg: async function (newExg, oldExg) {
             if (_.isEqual(newExg, oldExg)) return;
+            shakeLeftRigt("#rate-list");
             this.exg = newExg;
             this.exgRates = await this.fetchCurrencies(this.exg);
         },
